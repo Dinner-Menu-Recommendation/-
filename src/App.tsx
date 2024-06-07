@@ -1,11 +1,14 @@
 import { Reset } from "styled-reset";
-import styles from "./App.module.scss";
+import { RouterProvider } from "react-router-dom";
+import router from "./routes/router";
+import React from "react";
 
 function App() {
   return (
-    <div className={styles.main}>
+    <React.Fragment>
       <Reset />
-    </div>
+      <RouterProvider router={router} />
+    </React.Fragment>
   );
 }
 
