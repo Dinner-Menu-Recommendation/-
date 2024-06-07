@@ -2,7 +2,6 @@
 
 .main {
   font-size: 1rem;
-
   @include respond-above("sm") {
   }
   @include respond-above("md") {
@@ -10,6 +9,5 @@
   @include respond-above("lg") {
   }
   @include respond-above("xl") {
-    font-size: 5rem;
   }
 }
