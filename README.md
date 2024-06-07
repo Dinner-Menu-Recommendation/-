@@ -1,30 +1,33 @@
-# React + TypeScript + Vite
+## 커밋 컨벤션
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+커밋 메시지는 다음과 같이 구성됩니다:
 
-Currently, two official plugins are available:
+### 커밋 타입
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+| 타입       | 설명                                                     |
+| ---------- | -------------------------------------------------------- |
+| `feat`     | 새로운 기능에 대한 커밋                                  |
+| `fix`      | 버그 수정에 대한 커밋                                    |
+| `docs`     | 문서만 변경했을 경우                                     |
+| `design`   | css 및 UI 디자인 수정                                    |
+| `style`    | 코드 스타일 변경 (기능/버그 변경 없음)                   |
+| `refactor` | 리팩토링                                                 |
+| `test`     | 테스트 추가, 테스트 리팩토링 (비즈니스 로직에 변경 없음) |
+| `chore`    | 빌드 업무 수정, 패키지 매니저 설정할 경우 등             |
+| `rename`   | 파일, 폴더 이름 수정                                     |
+| `remove`   | 파일, 폴더 삭제                                          |
 
-## Expanding the ESLint configuration
+### 제목
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+제목은 최대 50글자까지 작성하며, 소문자로 시작하고 마침표를 붙이지 않습니다
 
-- Configure the top-level `parserOptions` property like this:
+예시)
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+<ul>
+    <li>feat: 로그인 기능 구현</li>
+    <li> design: 헤더 레이아웃 수정</li>
+</ul>
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### 본문
+
+본문은 선택사항이며, 커밋의 상세한 설명을 작성합니다. 본문은 한 줄에 72자를 넘지 않도록 하며, 어떻게 보다는 무엇과 왜를 설명하는데 집중합니다.
