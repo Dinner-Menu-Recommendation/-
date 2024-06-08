@@ -1,0 +1,12 @@
+@import "/src/styles/mixins";
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 0 40px;
+
+  @include respond-above("sm") {
+    width: 415px;
+  }
+}
