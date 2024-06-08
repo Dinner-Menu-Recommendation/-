@@ -1,7 +1,5 @@
-import Container from "../../components/container/Container";
-
 function Test() {
-  return <Container>테스트</Container>;
+  return <div>테스트</div>;
 }
 
 export default Test;
