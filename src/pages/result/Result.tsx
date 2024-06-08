@@ -1,5 +1,7 @@
+import Container from "../../components/container/Container";
+
 function Result() {
-  return <div>result</div>;
+  return <Container>result</Container>;
 }
 
 export default Result;
