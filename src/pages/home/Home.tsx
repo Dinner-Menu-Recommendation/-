@@ -1,4 +1,3 @@
-import Container from "../../components/container/Container";
 import { useGetExample } from "../../services/example/queries";
 import styles from "./Home.module.scss";
 
@@ -7,11 +6,7 @@ function Home() {
 
   console.log(data);
 
-  return (
-    <Container>
-      <div className={styles.main}>Home</div>
-    </Container>
-  );
+  return <div className={styles.main}>Home</div>;
 }
 
 export default Home;
