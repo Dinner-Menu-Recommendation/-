@@ -1,3 +1,57 @@
+## 저메추 (저녁 메뉴 추천!!)
+
+저메추는 유저들에게 저녁 메뉴를 추천해주는 서비스입니다.<br/>
+유저의 음식 취향, 종류(ex:맵기, 느끼함)등을 질문으로 받아서 <br/>
+유저에게 저녁 메뉴를 추천합니다. <br/>
+
+https://spoonacular.com/food-api 를 이용하여 개발되었습니다.
+
+## 기술 스택
+
+1. React
+2. Typescript
+3. SCSS
+4. Axios
+5. React-Query
+
+## 팀 소개
+
+<table>
+  <thead>
+    <tr >
+      <th style="text-align:center;" >김범수</th>
+      <th style="text-align:center;" >이춘호</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><img width="200" src="./public/profileImg/범수.png" />
+      <td><img width="200" src="./public/profileImg/춘호.png" />
+    </tr>
+    <tr>
+      <td><a target="_blank" href="https://github.com/Devinix00">Devinix</a></td>
+      <td><a target="_blank" href="https://github.com/Paydaypermanently">Elva</a></td>
+    </tr>
+    <tr>
+      <td>Front-End</td>
+      <td>Front-End</td>
+    </tr>
+    <tr>
+      <td width="200">
+        테스트 페이지 개발
+        <br/>
+        테스트 결과 페이지 개발
+      </td>
+      <td width="200">
+        시작 페이지 개발
+        <br/>
+        검색 결과 페이지 개발
+      </td>
+    </tr>
+
+  </tbody>
+</table>
+
 ## 커밋 컨벤션
 
 커밋 메시지는 다음과 같이 구성됩니다:
