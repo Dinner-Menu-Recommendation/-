@@ -4,9 +4,9 @@
   width: 100%;
   min-height: 100vh;
   margin: 0 auto;
-  padding: 0 40px;
+  padding: 0 24px;
 
   @include respond-above("sm") {
-    width: 415px;
+    width: 390px;
   }
 }
