@@ -19,7 +19,7 @@
     "sass": "^1.77.4",
     "styled-components": "^6.1.11",
     "styled-reset": "^4.5.2",
-    "zustand": "^4.5.4"
+    "zustand": "^4.5.4",
     "swiper": "^11.1.4"
   },
   "devDependencies": {
