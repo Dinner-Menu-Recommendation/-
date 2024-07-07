@@ -6,6 +6,9 @@ const GlobalStyle = createGlobalStyle`
   }
   * {
     box-sizing: border-box;
+    height: 100vh;
+    background: #FDF2E0;
+
   }
 `;
 
