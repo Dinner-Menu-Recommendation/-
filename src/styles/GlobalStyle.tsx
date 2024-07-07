@@ -8,12 +8,10 @@ const GlobalStyle = createGlobalStyle`
 
   html {
     font-size: 62.5%; 
+    background: #FDF2E0;
   }
   * {
     box-sizing: border-box;
-    height: 100vh;
-    background: #FDF2E0;
-
   }
 `;
 

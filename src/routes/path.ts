@@ -1,6 +1,6 @@
 const PATH = {
   HOME: "/",
-  TEST: "/test",
+  TEST: "/test/:test_id",
   RESULT: "/result",
 };
 
