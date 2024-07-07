@@ -14,6 +14,10 @@ const router = createBrowserRouter([
         path: PATH.HOME,
         element: <Home />,
       },
+      {
+        path: PATH.RESULT,
+        element: <Result />,
+      },
     ],
   },
   {
@@ -22,10 +26,6 @@ const router = createBrowserRouter([
       {
         path: PATH.TEST,
         element: <Test />,
-      },
-      {
-        path: PATH.RESULT,
-        element: <Result />,
       },
     ],
   },

@@ -1,0 +1,17 @@
+.container {
+  margin-top: 4rem;
+  padding-bottom: 4rem;
+  width: 100%;
+  max-height: calc(100vh - 20.6rem);
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}

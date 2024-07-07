@@ -1,0 +1,14 @@
+.container {
+  margin-top: 1.6rem;
+  width: 100%;
+  height: 1.6rem;
+  border-radius: 4rem;
+  border: 1px solid black;
+
+  .inner {
+    height: 100%;
+    border-radius: 40px 0px 0px 40px;
+    border-right: 1px solid var(--BlackToWhite-Black, #1b1b1c);
+    background: linear-gradient(90deg, #fd8415 0%, #ffab5d 100.56%);
+  }
+}

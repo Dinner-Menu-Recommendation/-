@@ -1,0 +1,23 @@
+.first_background_img {
+  width: 100%;
+  height: 100%;
+  background-image: url("/img/rice.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.second_background_img {
+  width: 100%;
+  height: 100%;
+  background-image: url("/img/bread.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.third_background_img {
+  width: 100%;
+  height: 100%;
+  background-image: url("/img/noodle.png");
+  background-position: center;
+  background-size: cover;
+}
