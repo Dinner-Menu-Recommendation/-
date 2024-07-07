@@ -15,33 +15,51 @@ function useChooseFood() {
     if (testCount === 1) {
       updatedTaste = { ...updatedTaste, spicy: title === "매운 음식" };
     } else if (testCount === 2) {
-      updatedTaste = { ...updatedTaste, meal: title === "식사" };
-    } else if (testCount === 3) {
       updatedTaste = { ...updatedTaste, cuisine: title as Food["cuisine"] };
-    } else if (testCount === 4) {
+    } else if (testCount === 3) {
       if (title === "고기") {
         updatedTaste = {
           ...updatedTaste,
           containsMeat: true,
-          containsSeafood: false,
         };
       } else {
         updatedTaste = {
           ...updatedTaste,
-          containsMeat: false,
           containsSeafood: true,
         };
       }
-    } else if (testCount === 5) {
+    } else if (testCount === 4) {
       updatedTaste = { ...updatedTaste, base: title as Food["base"] };
+    } else if (testCount === 5) {
+      updatedTaste = {
+        ...updatedTaste,
+        expensive: title === "가격 노상관" ? null : title === "가격 신경",
+      };
     } else if (testCount === 6) {
-      updatedTaste = { ...updatedTaste, expensive: title === "가격 노상관" };
+      updatedTaste = {
+        ...updatedTaste,
+        lowCalorie: title === "칼로리 노상관" ? null : title === "저칼로리",
+      };
     } else if (testCount === 7) {
-      updatedTaste = { ...updatedTaste, lowCalorie: title !== "칼로리 노상관" };
+      updatedTaste = {
+        ...updatedTaste,
+        withSoup:
+          title === "국물 있는 음식"
+            ? true
+            : title === "국물 없는 음식"
+            ? false
+            : null,
+      };
     } else if (testCount === 8) {
-      updatedTaste = { ...updatedTaste, withSoup: title === "국물 있는 음식" };
-    } else if (testCount === 9) {
-      updatedTaste = { ...updatedTaste, light: title !== "느끼한 음식" };
+      updatedTaste = {
+        ...updatedTaste,
+        light:
+          title === "느끼한 음식"
+            ? false
+            : title === "가벼운 음식"
+            ? true
+            : null,
+      };
 
       const filteredFood = foodData.filter((food) =>
         Object.entries(updatedTaste).every(([key, value]) => {
