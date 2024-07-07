@@ -20,7 +20,7 @@ function Header() {
       <div className={styles.question_numbers}>
         <p>{testCount}</p>
         <p>/</p>
-        <p>9</p>
+        <p>8</p>
       </div>
     </header>
   );
