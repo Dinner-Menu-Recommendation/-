@@ -2,7 +2,7 @@ import TestCard from "../TestCard/TestCard";
 import styles from "./CalorieTest.module.scss";
 
 interface CalorieTestProps {
-  handleClickCard: () => void;
+  handleClickCard: (title: string) => void;
 }
 
 function CalorieTest({ handleClickCard }: CalorieTestProps) {

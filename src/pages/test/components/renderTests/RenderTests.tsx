@@ -1,8 +1,8 @@
-import useTestCountStore from "../../../../stores/useTestCountStore";
+import useChooseFood from "../../../../hooks/useChooseFood";
 import styles from "./RenderTests.module.scss";
 import CalorieTest from "./calorieTest/CalorieTest";
 import CountryFoodTest from "./countryFoodTest/CountryFoodTest";
-import MealOrDrinkingSnacks from "./mealOrDrinkingSnacks/MealOrDrinkingSnacks";
+import MealOrSnacks from "./mealOrSnacks/MealOrSnacks";
 import MeatOrSeafoodTest from "./meatOrSeafoodTest/MeatOrSeafoodTest";
 import OilyTest from "./oilyTest/OilyTest";
 import PriceTest from "./priceTest/PriceTest";
@@ -11,17 +11,12 @@ import SoupTest from "./soupTest/SoupTest";
 import SpicyTest from "./spicyTest/SpicyTest";
 
 function RenderTests() {
-  const { testCount, setTestCount } = useTestCountStore();
-  const handleClickCard = () => {
-    setTestCount(testCount + 1);
-  };
+  const { testCount, handleClickCard } = useChooseFood();
 
   return (
     <div className={styles.container}>
       {testCount === 1 && <SpicyTest handleClickCard={handleClickCard} />}
-      {testCount === 2 && (
-        <MealOrDrinkingSnacks handleClickCard={handleClickCard} />
-      )}
+      {testCount === 2 && <MealOrSnacks handleClickCard={handleClickCard} />}
       {testCount === 3 && <CountryFoodTest handleClickCard={handleClickCard} />}
       {testCount === 4 && (
         <MeatOrSeafoodTest handleClickCard={handleClickCard} />

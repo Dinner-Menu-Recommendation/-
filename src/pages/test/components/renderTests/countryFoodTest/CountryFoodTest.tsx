@@ -2,7 +2,7 @@ import TestCard from "../TestCard/TestCard";
 import styles from "./CountryFoodTest.module.scss";
 
 interface CountryFoodTestProps {
-  handleClickCard: () => void;
+  handleClickCard: (title: string) => void;
 }
 
 function CountryFoodTest({ handleClickCard }: CountryFoodTestProps) {

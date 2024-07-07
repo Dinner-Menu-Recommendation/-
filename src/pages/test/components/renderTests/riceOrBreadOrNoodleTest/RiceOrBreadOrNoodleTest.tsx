@@ -2,7 +2,7 @@ import styles from "./RiceOrBreadOrNoodleTest.module.scss";
 import TestCard from "../TestCard/TestCard";
 
 interface RiceOrBreadOrNoodleTestProps {
-  handleClickCard: () => void;
+  handleClickCard: (title: string) => void;
 }
 
 function RiceOrBreadOrNoodleTest({

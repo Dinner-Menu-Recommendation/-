@@ -2,7 +2,7 @@ import TestCard from "../TestCard/TestCard";
 import styles from "./MeatOrSeafoodTest.module.scss";
 
 interface MeatOrSeafoodTestProps {
-  handleClickCard: () => void;
+  handleClickCard: (title: string) => void;
 }
 
 function MeatOrSeafoodTest({ handleClickCard }: MeatOrSeafoodTestProps) {

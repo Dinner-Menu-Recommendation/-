@@ -3,7 +3,7 @@ import TestCard from "../TestCard/TestCard";
 import styles from "./SpicyTest.module.scss";
 
 interface SpicyTestProps {
-  handleClickCard: () => void;
+  handleClickCard: (title: string) => void;
 }
 
 function SpicyTest({ handleClickCard }: SpicyTestProps) {

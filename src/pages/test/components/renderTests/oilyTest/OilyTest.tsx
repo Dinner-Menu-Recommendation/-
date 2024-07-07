@@ -2,7 +2,7 @@ import TestCard from "../TestCard/TestCard";
 import styles from "./OilyTest.module.scss";
 
 interface OilyTestProps {
-  handleClickCard: () => void;
+  handleClickCard: (title: string) => void;
 }
 
 function OilyTest({ handleClickCard }: OilyTestProps) {

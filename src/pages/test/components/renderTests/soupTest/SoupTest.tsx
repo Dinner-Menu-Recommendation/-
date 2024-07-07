@@ -2,7 +2,7 @@ import TestCard from "../TestCard/TestCard";
 import styles from "./SoupTest.module.scss";
 
 interface SoupTestProps {
-  handleClickCard: () => void;
+  handleClickCard: (title: string) => void;
 }
 
 function SoupTest({ handleClickCard }: SoupTestProps) {

@@ -2,7 +2,7 @@ import TestCard from "../TestCard/TestCard";
 import styles from "./PriceTest.module.scss";
 
 interface PriceTestProps {
-  handleClickCard: () => void;
+  handleClickCard: (title: string) => void;
 }
 function PriceTest({ handleClickCard }: PriceTestProps) {
   return (
