@@ -1,11 +1,12 @@
-import { useNavigate, useParams } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import styles from "./Header.module.scss";
 import { ArrowLeft } from "../../assets/svg";
 import PATH from "../../routes/path";
+import useTestCountStore from "../../stores/useTestCountStore";
 
 function Header() {
   const navigate = useNavigate();
-  const { test_id } = useParams();
+  const { testCount } = useTestCountStore();
 
   return (
     <header className={styles.header}>
@@ -17,9 +18,9 @@ function Header() {
       />
 
       <div className={styles.question_numbers}>
-        <p>{test_id}</p>
+        <p>{testCount}</p>
         <p>/</p>
-        <p>10</p>
+        <p>9</p>
       </div>
     </header>
   );
